@@ -1,4 +1,5 @@
 .transactionHistory {
+    font-size: 32px;
 
 }
 
@@ -7,23 +8,23 @@ td,th {
     
 }
 td {
-   border-right: 1px solid  #e4e4e4;
-   border-left: 1px solid #e4e4e4;
+   border-right: 1px solid  black;
+   border-left: 1px solid black;
     text-align: center;
     padding: 10px 0px;
     
 }
 thead {
-    background-color: #00bcd5;
-    color: #daffff;
+    background-color: black;
+    color: white;
 
 }
 
 thead th {
     
    padding: 10px 0px;
-   border-right: 1px solid white;
-   border-left: 1px solid white;
+   border: 1px solid black;
+   
 }
 thead tr {
     display: flex;
@@ -34,9 +35,10 @@ tbody tr {
     display: flex;
     flex-direction: row;
     background-color: #fff;
+    border: 1px solid black;
     
 }
 
 tr:nth-child(2n) {
-    background-color: #ecf1f3;
+    background-color: #d3d3d3;
 }

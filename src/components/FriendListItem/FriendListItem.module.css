@@ -1,11 +1,11 @@
 .item {
-    padding: 20px 20px 20px 40px;
+    padding: 20px 20px 20px 20px;
 display: flex;
-flex-direction: row;
+flex-direction: column;
 column-gap: 20px;
 align-items: center;
 background-color: white;
-box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.15);
+border: 3px solid black;
 margin-bottom: 15px;
 border-radius: 8px;
 
@@ -13,26 +13,27 @@ border-radius: 8px;
 
 .status {
     display: block;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-   background-color: red;
+    font-size: 36px;
+    color: red;
+    margin: 0px 0px 0px 0px;
 
 }
 .avatar {
-    width: 20%;
+    width: 150px;
+   max-width: 100%;
     display: block;
     border-radius: 6px;
-    background-color: blueviolet;
+    margin: 0px 0px 20px 0px;
 
 }
 .name{
-    font-size: 24px;
+    font-size: 40px;
     color: #3c4756;
   font-weight: 700;
+  margin: 0px 0px 20px 0px;
 }
 .status.isOnline {
     
    
-    background-color: green;
+    color: green;
 }

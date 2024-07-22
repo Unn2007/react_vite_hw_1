@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import css from './Stats.module.css';
 import { formatStatName} from '../../utils/index.js';
 
-export const Stats = ({ stats }) => {
+ const Stats = ({ stats }) => {
   const statsNames = Object.keys(stats);
   const statsItems = statsNames.map(key => {
     return (
@@ -16,6 +16,7 @@ export const Stats = ({ stats }) => {
   return <ul className={css.stats}>{statsItems}</ul>;
 };
 
+export default Stats;
 Stats.propTypes = {
   stats: PropTypes.exact({
     followers: PropTypes.number.isRequired,

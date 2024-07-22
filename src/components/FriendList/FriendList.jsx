@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
-import { FriendListItem } from '../FriendListItem/FriendListItem';
-import css from './FriendList.module.css';
-import { Fragment } from 'react';
+import  FriendListItem  from '../FriendListItem/FriendListItem';
+import css from '../FriendList/FriendList.module.css';
 
-export const FriendList = ({ friends }) => {
+
+const  FriendList = ({ friends }) => {
   const friendListcards = friends.map(({ avatar, name, isOnline, id }) => {
     return (
-      <Fragment key={id}>
+      <li key={id}>
         <FriendListItem avatar={avatar} name={name} isOnline={isOnline} />
-      </Fragment>
+      </li>
     );
   });
 
@@ -26,3 +26,4 @@ FriendList.propTypes = {
   ),
 };
 
+export default FriendList;

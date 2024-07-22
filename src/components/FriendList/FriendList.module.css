@@ -1,3 +1,10 @@
 .friendList {
     list-style: none;
+    display: flex;
+    column-gap: 20px;
+    
+}
+
+.friendList li {
+    flex-basis: 20%;
 }
